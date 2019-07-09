@@ -27,6 +27,8 @@ Route::post('/contatos/cadastrar', 'ContatosController@store');
 Route::get('/contatos/destroy/{id}', 'ContatosController@destroy');
 Route::any('/contatos/pesquisar','ContatosController@pesquisar');
 
+Route::get('/contatos-api','ControllerContatosApi@indexView');
+
 Route::get('/usuarios','UsuariosController@index');
 Route::get('/usuarios/edit/{id}', 'UsuariosController@edit');
 Route::get('/usuarios/show/{id}', 'UsuariosController@show');

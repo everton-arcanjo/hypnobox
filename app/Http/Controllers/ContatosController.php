@@ -127,4 +127,11 @@ class ContatosController extends Controller
         ]);
     }
 
+    public function indexJson()
+    {
+        $contatos = \App\Contatos::all();
+
+        return json_encode($contatos);
+    }
+
 }
